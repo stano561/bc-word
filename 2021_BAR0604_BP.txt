@@ -1,0 +1,144 @@
+Abstrakt
+
+Cieľom tejto práce bolo oboznámiť o priebehu vykonávania odbornej praxe, ktorá prebiehala vo firme Marelli Automotive Lighting Jihlava (Czech Republic) s.r.o. na R&D oddelení. Obsahom praxe bolo vytvoriť aplikáciu, ktorá bude slúžiť na evidenciu softwarových licencií. Logická časť bola implementovaná hlavne v jazyku Java EE pomocou Spring frameworku. Pre úložisko dát v databáze sa použila technológia MySQL. Užívateľské prostredie bolo realizované pomocou HTML , CSS a JavaScritpt. Práca zahŕňa popis použitých technológii a jazykov, ktoré boli využívané pri vývoji aplikácie. Ďalej zhrnutie a zhodnotenie získaných znalostí nadobudnutých počas priebehu trvania praxe. //a popis riešenia prípadných problémov, a následné testovanie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Problém a požiadavka
+
+Za prvé je potrebné poznať aký problém má aplikácia riešiť, aby bolo možné vytvoriť adekvátne riešenie. 
+
+3.1 Problém
+Každá firma potrebuje nejakým spôsobom evidovať svoje výdaje a prípadne zabezpečiť ich dôslednú archiváciu. V tejto práci sa budem venovať riešeniu evidencie a archivácie informácií pre oddelenie R&D. Zavedenie systému je potrebné z dôvodu veľkého množstva spravovaných licencií. Taktiež je potrebné efektívnejšie spracovávať dáta pre prípadné generovanie reportov či už v podobe grafickej, ktoré bude výhodnejšie pre manažment alebo vo forme bežnej, ktoré vyhovuje viac zamestnancom.
+
+3.2 Požiadavka
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Predstavenie firmy
+2.1 Predstavenie firmy
+Pôvodne bola spoločnosť Marelli Automotive Lighting Jihlava v Českej Republike založená v roku 1997 pod firmou Bosch. Vo firme došlo k zmene keď v roku 1999 vstúpila do nej spoločnosť Magneti Marelli a stala sa jej výhradným vlastníkom od roku 2003.
+V spoločnosti Magneti Marelli sa prvého mája 2019 jej divízia čiže firma Automotive Lighting zlúčila so spoločnosťou Calsonic Kansei. Keďže sa môže pyšnieť dlhou históriou pôsobenia už v 15 krajinách v oblasti výroby inovatívnych technologických súčastiach, ktoré sú hlavne určené pre automobilový priemysel. Keďže sa zmenil vlastník firmy tak to viedlo k zmene názvu na Marelli Automotive Lighting Jihlava.
+Činnosť Marelli Automotive Lighting Jihlava je sústredený na vývoj a výrobu najmodernejších predných svetlometov. Návrh svetlometov prebieha spoločne so zákazníkmi a partnermi vďaka, ktorým sa dotvoria charakteristické prvky určitej značky a modelu. Vďaka kvalitnej sériovej výrobe sú výsledné svetlomety dodávané popredným svetovým výrobcom automobilov a získavajú ocenenia na svetovom trhu.
+Firma sa riadi a dodržuje hodnotami, ktoré hlása:
+-	byť hrdý na značku Marelli Automotive Lighting Jihlava a jej výrobky
+-	odvaha prekonávať prekážky a ochota hľadať riešenie
+-	priama a otvorená komunikácia
+-	spolupracovať týmovo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Použité techonológie
+MySQL
+Štruktúrovaná kolekcia dát sa nazýva databáza, pokiaľ sú dáta uložené v tabuľkách, ktoré uchovávajú konkrétne množiny dát tak sa jedná o relačnú databázu. 
+MySQL je otvorený relačný databázový systém (RDBMS) s modelom klient-server. Na vytváranie a správu databáz založených na relačnom modeli sa používa softvér RDBMS. /*alebo*/ RDBMS je softvér, ktorý nám slúži na vytváranie a správu databáz, ktoré sú založené na relačnom modeli.
+Pomocou MySQL sa vytvorí databáza, v ktorej budú dáta uložené a bude možné s nimi manipulovať. Klient potom spolu so serverom spolu komunikujú pomocou jazyka štruktúrovaného vyhľadávacieho jazyka SQL tým, že vytvárajú dotazy. Následne im server vráti požadovanú odpoveď, ktorá sa objaví na klientovej strane.
+MySQL nám ponúka pri tvorení databáze si vybrať rôzny formát úložiska dát takzvaný storage engine. 
+
+
+Docker
+Docker ponúka možnosť uložiť a spustiť infraštruktúru danej aplikácie v takzvaných kontajnerov. Vďaka izolovanosti je možné spustiť viac kontajnerov naraz na danom hostiteľovi. Docker používa klient-server architektúru, kde užívateľ komunikuje pomocou klienta s démonom, ktorý sa stará o beh, vytvorenie a distribuovanie kontajnerov. Kontajner je priestor, ktorý obsahuje všetko potrebné pre chod aplikácie. Pomocou týchto kontajnerov môžu aplikácie fungovať oddelene od zbytku systému.
+
+
