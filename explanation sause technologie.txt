@@ -2,7 +2,10 @@
 https://www.spseke.sk/tutor/prednasky/reldatab.htm
 https://www.hostinger.ru/rukovodstva/shto-takoje-mysql/
 
--- docker --
+-- Docker --
 https://www.freecodecamp.org/news/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b/
 https://magazin.kpi.fei.tuke.sk/2019/02/docker-a-jeho-pouzitie-pri-kontajnerizacii/
 https://docs.docker.com/get-started/overview/
+
+-- Java EE --
+https://www.javatpoint.com/java-ee
